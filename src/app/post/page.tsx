@@ -13,7 +13,7 @@ function Page() {
     }, [])
   
     return (
-      <div className='bg-gray-700'>
+      <div className='bg-gray-'>
         {post.map(({ id, title, body }) => (
           <div key={id}>
             <PostCard id={id} title={title} body={body} />
