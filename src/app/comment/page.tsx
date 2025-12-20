@@ -1,9 +1,9 @@
 'use client'
 import { CommentDetails, getComment } from '@/api/comment.api'
 import CommentCard from '@/components/user/comment-card'
-import { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 
-function page() {
+const Page: React.FC = () => {
     const [comment, setcomment] = useState<CommentDetails[]>([])
 
     useEffect(() => {
@@ -23,4 +23,4 @@ function page() {
   )
 }
 
-export default page
+export default page;
